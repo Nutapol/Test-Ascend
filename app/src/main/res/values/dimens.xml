@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+
+    <dimen name="icon_size">24dp</dimen>
+
+    <dimen name="box_14">14dp</dimen>
+    <dimen name="box_20">20dp</dimen>
+    <dimen name="box_28">28dp</dimen>
+    <dimen name="box_38">38dp</dimen>
+    <dimen name="box_54">54dp</dimen>
+    <dimen name="box_61">61dp</dimen>
+    <dimen name="box_128">128dp</dimen>
+    <dimen name="box_140">140dp</dimen>
+    <dimen name="box_240">240dp</dimen>
+
+    <dimen name="small_btn_width">80dp</dimen>
+    <dimen name="small_btn_height">40dp</dimen>
+
+    <dimen name="button_normal">48dp</dimen>
+
+    <dimen name="profile_image">128dp</dimen>
+    <dimen name="radius_icon">12dp</dimen>
+
+
+
+</resources>

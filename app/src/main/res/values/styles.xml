@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">@color/red</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="LabelTag">
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8</item>
+        <item name="android:padding">@dimen/margin_8</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppToolBar" parent="">
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">33sp</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>
