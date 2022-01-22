@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.test_ascend.Activity.main.base.BaseFragment
+import com.example.test_ascend.Activity.main.dialog.DialogError
 import com.example.test_ascend.Activity.main.model.ProductModel
 import com.example.test_ascend.R
 import kotlinx.android.synthetic.main.fragment_detail_product.*
@@ -44,7 +45,6 @@ class DetailProductFragment : BaseFragment() {
     }
 
     override fun initView() {
-
     }
 
     override fun getData() {
@@ -52,12 +52,19 @@ class DetailProductFragment : BaseFragment() {
         viewModel.onGetProductById(productId)
         viewModel.getProductById.observe(this, {
             if (it != null) {
-                productRetrieved(it)
+                productRetrieved()
+                progress_bar.visibility = View.GONE
+            }
+        })
+        viewModel.error.observe(this, {
+            val dialog = DialogError()
+            activity?.let { c -> dialog.showDialog(c, it)
+                progress_bar.visibility = View.GONE
             }
         })
     }
 
-    fun productRetrieved(productModel: ProductModel) {
+    fun productRetrieved() {
         var data = viewModel.getProductById.value
         Glide
             .with(this)

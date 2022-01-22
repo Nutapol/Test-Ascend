@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
                     android:layout_marginTop="5dp"
-                    android:text="18.95"
+                    android:text="00.00"
                     android:textColor="@color/red"
                     android:textSize="24sp"
                     android:textStyle="bold">
@@ -90,8 +90,17 @@
                 </androidx.appcompat.widget.AppCompatTextView>
 
             </LinearLayout>
+
+
         </RelativeLayout>
 
     </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
 
 </FrameLayout>

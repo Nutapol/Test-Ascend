@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.test_ascend.Activity.main.adapter.ProductAdapter
 import com.example.test_ascend.Activity.main.base.BaseFragment
+import com.example.test_ascend.Activity.main.dialog.DialogError
 import com.example.test_ascend.Activity.main.model.ProductModel
 import com.example.test_ascend.R
 import kotlinx.android.synthetic.main.fragment_main.*
@@ -55,20 +56,27 @@ class ProductListFragment : BaseFragment(), ProductAdapter.Delegate {
 
     override fun initView() {
         super.initView()
-        adapter = context?.let { ProductAdapter(it, emptyList() , this) }
+        adapter = context?.let { ProductAdapter(it, emptyList(), this) }
         recycle_view.let {
             it.adapter = adapter
-            it.layoutManager = GridLayoutManager(context,2, LinearLayoutManager.VERTICAL, false)
+            it.layoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
         }
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     override fun getData() {
         super.getData()
         viewModel.onGetProduct()
         viewModel.listProduct.observe(this, {
             adapter?.list = it
             adapter?.notifyDataSetChanged()
+            progress_bar.visibility = View.GONE
+        })
+        viewModel.error.observe(this, {
+            val dialog = DialogError()
+            activity?.let { c ->
+                dialog.showDialog(c, it)
+                progress_bar.visibility = View.GONE
+            }
         })
     }
 
