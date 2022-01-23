@@ -4,7 +4,7 @@
 
 ## Libary
 
->This library comes with a comprehensive demo application built on the MVVM concept. The demo application uses popular libraries such as RxJava, Coroutines, , OkHttp, Retrofit, Glide.
+>This library comes with a comprehensive demo application built on the MVVM concept. The demo application uses popular libraries such as Koin, Coroutines, OkHttp, Retrofit, Glide.
 
 ## Simmulator
 
