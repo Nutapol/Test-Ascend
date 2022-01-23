@@ -1,6 +1,12 @@
 ## How to
 
->If you don't have the program yet You need to install Android studio.
+>If you don't have the program yet You need to install Android studio program.
+
+There are 4 main steps in the installation process as follows:
+1. Install the JDK >>>[Install JDK](https://www.oracle.com/java/technologies/downloads/)
+2. Check Java Version
+3. Set the path to the JDK.
+4. Install Android Studio
 
 ## Libary
 
@@ -8,7 +14,7 @@
 
 ## Simmulator
 
-> how to simulate simmulator Click >>>[WordDisplay](https://developer.android.com/studio/run/emulator?gclid=CjwKCAiA866PBhAYEiwANkIneJXqxQrDEsHvlzmL8ZdUR-brdLzynOGzd1k0krVhYkXmptrbNPhSnRoCyIUQAvD_BwE&gclsrc=aw.ds)
+> how to simulate simmulator Click >>>[How to setUp](https://developer.android.com/studio/run/emulator?gclid=CjwKCAiA866PBhAYEiwANkIneJXqxQrDEsHvlzmL8ZdUR-brdLzynOGzd1k0krVhYkXmptrbNPhSnRoCyIUQAvD_BwE&gclsrc=aw.ds)
 
 ## ScreenShot
 
