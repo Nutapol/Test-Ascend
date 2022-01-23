@@ -2,11 +2,9 @@
 
 >If you don't have the program yet You need to install Android studio program.
 
-There are 4 main steps in the installation process as follows:
-1. Install the JDK >>>[Install JDK](https://www.oracle.com/java/technologies/downloads/)
-2. Check Java Version
-3. Set the path to the JDK.
-4. Install Android Studio
+Install the JDK Click>>>[Dowload JDK](https://www.oracle.com/java/technologies/downloads/)
+
+Install Android Studio Click>>>[Dowload Android Studio](https://developer.android.com/studio)
 
 ## Libary
 
