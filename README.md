@@ -18,8 +18,3 @@ Install Android Studio Click>>>[Dowload Android Studio](https://developer.androi
 
 <img src="https://github.com/Nutapol/Test-Ascend/blob/master/app/src/main/res/drawable/list_ck.jpg" width="240" height="480">
 <img src="https://github.com/Nutapol/Test-Ascend/blob/master/app/src/main/res/drawable/detail_ck.jpg" width="240" height="480">
-
-# Issue
-
-> I can't do UnitTest as scheduled, but I want to learn the process. Working with Junit test, please give me a chance. in education and learning
-I hope there will be a good opportunity for me there.
